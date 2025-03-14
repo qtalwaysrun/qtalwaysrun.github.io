@@ -1,0 +1,66 @@
+:root {
+    --primary: #2c3e50;
+    --secondary: #5a7f8c;
+    --accent: #8ab4c6;
+    --text: #333;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    color: var(--text);
+}
+
+.navbar {
+    background: var(--primary);
+    padding: 1rem;
+    position: sticky;
+    top: 0;
+}
+
+.nav-menu {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-menu a {
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.nav-menu a:hover {
+    color: var(--accent);
+}
+
+.hero {
+    text-align: center;
+    padding: 4rem 2rem;
+}
+
+.profile-img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid var(--secondary);
+}
+
+.photo-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+    padding: 2rem;
+}
+
+.pdf-redirect {
+    text-align: center;
+    padding: 4rem;
+    font-size: 1.2rem;
+}

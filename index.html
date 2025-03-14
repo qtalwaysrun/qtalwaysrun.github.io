@@ -3,154 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ting Qiu | PhD Candidate in Neuroscience</title>
-    <style>
-        :root {
-            --primary-color: #2c3e50;
-            --secondary-color: #3498db;
-            --text-color: #333;
-        }
-
-        body {
-            font-family: 'Segoe UI', system-ui, sans-serif;
-            line-height: 1.6;
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 20px;
-            color: var(--text-color);
-        }
-
-        header {
-            text-align: center;
-            padding: 4rem 0;
-            border-bottom: 2px solid var(--primary-color);
-        }
-
-        .profile-img {
-            width: 200px;
-            height: 200px;
-            border-radius: 50%;
-            object-fit: cover;
-            margin: 20px 0;
-            border: 4px solid var(--secondary-color);
-        }
-
-        section {
-            margin: 3rem 0;
-            padding: 2rem;
-            background: #f9f9f9;
-            border-radius: 8px;
-        }
-
-        h1, h2 {
-            color: var(--primary-color);
-        }
-
-        .contact-list {
-            list-style: none;
-            padding: 0;
-            display: flex;
-            gap: 20px;
-            justify-content: center;
-        }
-
-        a {
-            color: var(--secondary-color);
-            text-decoration: none;
-        }
-
-        a:hover {
-            text-decoration: underline;
-        }
-
-        .project-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 20px;
-        }
-
-        footer {
-            text-align: center;
-            padding: 2rem;
-            margin-top: 4rem;
-            border-top: 1px solid #ddd;
-        }
-
-        @media (max-width: 768px) {
-            body {
-                padding: 10px;
-            }
-            
-            section {
-                padding: 1rem;
-            }
-        }
-    </style>
+    <title>Ting Qiu | Neuroscience PhD Candidate</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header>
+    <nav class="navbar">
+        <ul class="nav-menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="cv.html">CV</a></li>
+            <li><a href="publications.html">Publications</a></li>
+            <li><a href="academic.html">Academic</a></li>
+            <li><a href="social.html">Social</a></li>
+        </ul>
+    </nav>
+
+    <section class="hero">
         <h1>Ting Qiu</h1>
-        <p>PhD Candidate in Neuroscience</p>
-        <p>McGill University</p>
-        <img src="images/profile.JPG" alt="Profile Photo" class="profile-img">
-    </header>
-
-    <!-- CV Section -->
-    <section id="cv">
-        <h2>Curriculum Vitae</h2>
-        <p>Download my full CV: <a href="docs/cv_TQ.pdf" target="_blank">PDF Version</a></p>
-        <h3>Education</h3>
-        <ul>
-            <li>PhD in Neuroscience - McGill University (2020-Present)</li>
-            <li>MSc in Biomedical Engineering - UESTC (2017-2020)</li>
-        </ul>
-    </section>
-
-    <!-- Research Section -->
-    <section id="research">
-        <h2>Research Interests</h2>
-        <ul>
-            <li>Multimodal neuroimaging in Preclinical AD</li>
-            <li>Anything related to Human brain</li>
-            <li>Leanring new stuff both inside and outside the lab</li>
-        </ul>
+        <p>Neuroscience PhD Candidate at McGill University</p>
+        <img src="images/profile.jpg" alt="Profile Photo" class="profile-img">
         
-        <h3>Publications</h3>
-        <ul>
-            <li>Qiu T. et al. (2024). "Structural white matter properties and cognitive resilience to tau pathology". Alzheimer's & Dementia.</li>
-            <li>Xiao D, Li J, Ren Z, Dai M, Jiang Y, Qiu T, et al., for the Frontotemporal Lobar Degeneration Neuroimaging Initiative. (2024) Association of cortical morphology, white matter hyperintensity, and glymphatic function in frontotemporal dementia variants. Alzheimer's & Dementia</li>
-            </li>Qiu T, et al. (2019) Precentral degeneration and cerebellar compensation in amyotrophic lateral sclerosis: a multimodal MRI analysis. Human Brain Mapping</li>
-        </ul>
-    </section>
-
-    <!-- Projects Grid -->
-    <section id="projects">
-        <h2>Recent Projects</h2>
-        <div class="project-grid">
-            <div>
-                <h3>xx</h3>
-                <p>Developing NLP models for clinical text interpretation.</p>
-            </div>
-            <div>
-                <h3>Bias Detection Toolkit</h3>
-                <p>Open-source library for detecting ML model biases.</p>
-            </div>
+        <div class="photo-grid">
+            <img src="images/home1.jpg" alt="Lab work">
+            <img src="images/home2.jpg" alt="Conference">
+            <img src="images/home3.jpg" alt="Research">
         </div>
     </section>
 
-    <!-- Contact Section -->
-    <section id="contact">
-        <h2>Contact</h2>
-        <ul class="contact-list">
-            <li>📧 <a href="mailto:ting.qiu@mail.mcgill.ca">ting.qiu@mail.mcgill.ca</a></li>
-            <li>🐦 <a href="https://x.com/Ting12460123" target="_blank">Twitter</a></li>
-            <!-- <li>💼 <a href="https://linkedin.com/in/johndoe" target="_blank">LinkedIn</a></li> -->
-            <li>📂 <a href="https://github.com/qtalwaysrun" target="_blank">GitHub</a></li>
-        </ul>
-    </section>
-
-    <footer>
-        <p>© 2025 Ting Qiu | Last updated: March 2025</p>
-    </footer>
+    <script src="js/main.js"></script>
 </body>
 </html>
