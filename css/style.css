@@ -1,0 +1,89 @@
+:root {
+    --primary: #2c3e50;
+    --secondary: #5a7f8c;
+    --accent: #8ab4c6;
+    --text: #333;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    color: var(--text);
+}
+
+a, a:hover
+{
+    text-decoration: none;
+}
+
+/* Navigation */
+.navbar {
+    background: var(--primary);
+    padding: 1rem;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.nav-menu {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-menu a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.nav-menu a:hover {
+    color: var(--accent);
+}
+
+/* Profile Section */
+.header-content {
+    text-align: center;
+    margin: 2rem 0 3rem;
+}
+
+.profile-img {
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    margin: 0 auto 1.5rem;
+    display: block;
+}
+
+/* Introduction Text */
+.intro-text {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.intro-item {
+    text-align: left;
+    margin: 1.8rem 0;
+    padding-left: 2.5rem;
+    position: relative;
+    font-size: 1.5rem;
+    line-height: 1.8;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.intro-item::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0.2em;
+    font-size: 1.4em;
+}
